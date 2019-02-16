@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>CIVITAS [ICON_GOVERNMENT] Romania</Name>
+    <Guid>b77c610e-e9f8-4373-8e54-16db48639ae4</Guid>
+    <ProjectGuid>87b8dce2-8fdd-4894-a06d-e16c2997c2af</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Adds Romania as a new civilization in Civilization VI.</Teaser>
+    <Description>Adds Romania as a new civilization in Civilization VI.</Description>
+    <Authors>ChimpanG, SeelingCat, Deliverator, Digihuman, p0kiehl, Chrisy15, thecrazyscotsman, Sailor Cat</Authors>
+    <SpecialThanks>Belle, Alin Bul</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>2.0</CompatibleVersions>
+    <AssemblyName>CIVITAS Romania</AssemblyName>
+    <RootNamespace>CIVITAS Romania</RootNamespace>
+    <AssociationData><![CDATA[<Associations>
+  <Dependency type="Dlc" title="Expansion: Gathering Storm" id="4873eb62-8ccc-4574-b784-dda455e74e68" />
+</Associations>]]></AssociationData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateArt id="ArtDep"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateIcons id="Romania_Setup_Icons"><Properties><LoadOrder>100</LoadOrder></Properties><File>Core/Romania_Icons.sql</File></UpdateIcons><UpdateText id="Romania_Setup_Text"><Properties><LoadOrder>100</LoadOrder></Properties><File>Core/Romania_Localisation.sql</File></UpdateText><UpdateColors id="Romania_Setup_Colors"><File>Core/Romania_Colors.sql</File></UpdateColors></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateArt id="ArtDep"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateDatabase id="Romania_DB"><Properties><LoadOrder>100</LoadOrder></Properties><File>Core/Romania_Civilization.sql</File><File>Core/Romania_UA.sql</File><File>Core/Romania_UI.sql</File><File>Core/Romania_UU.sql</File><File>Core/Romania_ModSupport.sql</File></UpdateDatabase><UpdateIcons id="Romania_Icons"><Properties><LoadOrder>100</LoadOrder></Properties><File>Core/Romania_Icons.sql</File></UpdateIcons><UpdateText id="Romania_Text"><Properties><LoadOrder>100</LoadOrder></Properties><File>Core/Romania_Localisation.sql</File></UpdateText><UpdateColors id="Romania_Colors"><File>Core/Romania_Colors.sql</File></UpdateColors></InGameActions>]]></InGameActionData>
+    <ActionCriteriaData><![CDATA[<ActionCriteria><Criteria id="Stephen"><LeaderPlayable><Expansion1_Players>LEADER_CVS_STEPHEN_III</Expansion1_Players></LeaderPlayable></Criteria><Criteria id="Vlad"><LeaderPlayable><Expansion1_Players>LEADER_CVS_VLAD_III</Expansion1_Players></LeaderPlayable></Criteria></ActionCriteria>]]></ActionCriteriaData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Mod.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArtDefs\Buildings.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\Civilizations.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\Cultures.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\Landmarks.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\Overlay.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\Units.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\UserInterface.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Archive\Romania_UI.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Romania_Civilization.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Romania_Icons.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Romania_Localisation.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Romania_ModSupport.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Romania_UA.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Romania_UI.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Romania_UU.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Romania_Colors.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\Icons.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\LensAssets.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\Tilebase.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\Units.xlp">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ArtDefs\" />
+    <Folder Include="Core\" />
+    <Folder Include="Core\Archive" />
+    <Folder Include="XLPs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

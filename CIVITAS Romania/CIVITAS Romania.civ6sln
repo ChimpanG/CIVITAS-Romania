@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# ModBuddy Solution File, Format Version 12.00
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "CIVITAS Romania", "CIVITAS Romania\CIVITAS Romania.civ6proj", "{87B8DCE2-8FDD-4894-A06D-E16C2997C2AF}"
+EndProject
+Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "CIVITAS Vlad III", "CIVITAS Vlad III\CIVITAS Vlad III.civ6proj", "{B03F5FE3-916F-459E-B871-420345AAD810}"
+EndProject
+Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "CIVITAS Stephen III", "CIVITAS Stephen III\CIVITAS Stephen III.civ6proj", "{213437C0-DB30-4D9F-9846-CF557A404775}"
+EndProject
+Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "CIVITAS Carol I", "CIVITAS Carol I\CIVITAS Carol I.civ6proj", "{6EB4AEB5-93E5-40A1-A62C-ABBFA98BD980}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Civ6 = Default|Civ6
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87B8DCE2-8FDD-4894-A06D-E16C2997C2AF}.Default|Civ6.ActiveCfg = Default|Civ6
+		{87B8DCE2-8FDD-4894-A06D-E16C2997C2AF}.Default|Civ6.Build.0 = Default|Civ6
+		{B03F5FE3-916F-459E-B871-420345AAD810}.Default|Civ6.ActiveCfg = Default|Civ6
+		{B03F5FE3-916F-459E-B871-420345AAD810}.Default|Civ6.Build.0 = Default|Civ6
+		{213437C0-DB30-4D9F-9846-CF557A404775}.Default|Civ6.ActiveCfg = Default|Civ6
+		{213437C0-DB30-4D9F-9846-CF557A404775}.Default|Civ6.Build.0 = Default|Civ6
+		{6EB4AEB5-93E5-40A1-A62C-ABBFA98BD980}.Default|Civ6.ActiveCfg = Default|Civ6
+		{6EB4AEB5-93E5-40A1-A62C-ABBFA98BD980}.Default|Civ6.Build.0 = Default|Civ6
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

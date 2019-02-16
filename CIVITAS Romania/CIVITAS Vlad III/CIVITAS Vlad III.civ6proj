@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>CIVITAS [ICON_GREATPERSON] Vlad III</Name>
+    <Guid>3e43d019-c7e2-4cfd-8694-e18caa0a2018</Guid>
+    <ProjectGuid>b03f5fe3-916f-459e-b871-420345aad810</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Adds Vlad  III  as an alternative leader for CIVITAS Romania.</Teaser>
+    <Description>Adds Vlad IIII as an alternative leader for CIVITAS [ICON_GOVERNMENT] Romania.</Description>
+    <Authors>ChimpanG, SeelingCat, Deliverator, Digihuman, p0kiehl, Chrisy15, thecrazyscotsman, Sailor Cat</Authors>
+    <SpecialThanks>Belle, Alin Bul</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <AssemblyName>CIVITAS Vlad III</AssemblyName>
+    <RootNamespace>CIVITAS Vlad III</RootNamespace>
+    <AssociationData><![CDATA[<Associations>
+  <Dependency type="Mod" title="CIVITAS [ICON_GOVERNMENT] Romania" id="b77c610e-e9f8-4373-8e54-16db48639ae4" />
+  <Dependency type="Dlc" title="Expansion: Gathering Storm" id="4873eb62-8ccc-4574-b784-dda455e74e68" />
+</Associations>]]></AssociationData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateArt id="ArtDep"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateDatabase id="Vlad_III_Setup_DB"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Vlad_III_Config.sql</File></UpdateDatabase><UpdateIcons id="Vlad_III_Setup_Icons"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Vlad_III_Icons.sql</File></UpdateIcons><UpdateText id="Vlad_III_Setup_Text"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Vlad_III_Localisation.sql</File></UpdateText><UpdateColors id="Vlad_III_Colors"><File>Core/Vlad_III_Colors.sql</File></UpdateColors></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateArt id="ArtDep"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateDatabase id="Vlad_III_DB"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Vlad_III_Leader.sql</File><File>Core/Vlad_III_UA.sql</File><File>Core/Vlad_III_UU.sql</File><File>Core/Vlad_III_Agenda.sql</File><File>Core/Vlad_III_Strategy.sql</File><File>Core/Vlad_III_ModSupport.sql</File></UpdateDatabase><UpdateIcons id="Vlad_III_Icons"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Vlad_III_Icons.sql</File></UpdateIcons><UpdateText id="Vlad_III_Text"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Vlad_III_Localisation.sql</File></UpdateText><AddGameplayScripts id="Vlad_III_Scripts"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Vlad_III_Scripts.lua</File></AddGameplayScripts><UpdateColors id="Vlad_III_Colors"><File>Core/Vlad_III_Colors.sql</File></UpdateColors></InGameActions>]]></InGameActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Mod.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core" />
+    <Folder Include="ArtDefs" />
+    <Folder Include="XLPs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArtDefs\Leaders.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\Units.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Vlad_III_Agenda.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Vlad_III_Colors.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Vlad_III_Config.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Vlad_III_Icons.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Vlad_III_Leader.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Vlad_III_Localisation.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Vlad_III_ModSupport.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Vlad_III_Scripts.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Vlad_III_Strategy.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Vlad_III_UA.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Vlad_III_UU.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\Icons.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\LeaderFallback.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\Units.xlp">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

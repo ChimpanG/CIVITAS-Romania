@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>CIVITAS [ICON_GREATPERSON] Stephen III</Name>
+    <Guid>bd71502e-3b7f-42f3-bd07-fc906d997040</Guid>
+    <ProjectGuid>213437c0-db30-4d9f-9846-cf557a404775</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Adds Stephen III  as an alternative leader for CIVITAS Romania.</Teaser>
+    <Description>Adds Carol I as an alternative leader for CIVITAS [ICON_GOVERNMENT] Romania.</Description>
+    <Authors>ChimpanG</Authors>
+    <SpecialThanks>Belle, Alin Bul</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <AssemblyName>CIVITAS Stephen III</AssemblyName>
+    <RootNamespace>CIVITAS Stephen III</RootNamespace>
+    <AssociationData><![CDATA[<Associations>
+  <Dependency type="Mod" title="CIVITAS [ICON_GOVERNMENT] Romania" id="b77c610e-e9f8-4373-8e54-16db48639ae4" />
+  <Dependency type="Dlc" title="Expansion: Rise and Fall" id="1B28771A-C749-434B-9053-D1380C553DE9" />
+</Associations>]]></AssociationData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateArt id="ArtDep"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateDatabase id="Stephen_III_DB"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Stephen_III_Leader.sql</File><File>Core/Stephen_III_UA.sql</File><File>Core/Stephen_III_Agenda.sql</File><File>Core/Stephen_III_Strategy.sql</File><File>Core/Stephen_III_ModSupport.sql</File></UpdateDatabase><UpdateIcons id="Stephen_III_Icons"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Stephen_III_Icons.sql</File></UpdateIcons><UpdateText id="Stephen_III_Text"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Stephen_III_Localisation.sql</File></UpdateText></InGameActions>]]></InGameActionData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateArt id="ArtDep"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateDatabase id="Stephen_III_Setup_DB"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Stephen_III_Config.sql</File></UpdateDatabase><UpdateIcons id="Stephen_III_Setup_Icons"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Stephen_III_Icons.sql</File></UpdateIcons><UpdateText id="Stephen_III_Setup_Text"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Stephen_III_Localisation.sql</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Mod.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ArtDefs\" />
+    <Folder Include="Core" />
+    <Folder Include="XLPs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArtDefs\Buildings.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\Districts.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\Landmarks.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\Leaders.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Stephen_III_Agenda.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Stephen_III_Config.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Stephen_III_Icons.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Stephen_III_Leader.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Stephen_III_Localisation.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Stephen_III_ModSupport.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Stephen_III_Strategy.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Stephen_III_UA.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\Icons.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\LeaderFallback.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\Tilebase.xlp">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

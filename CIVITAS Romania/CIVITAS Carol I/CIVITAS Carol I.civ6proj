@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>CIVITAS [ICON_GREATPERSON] Carol I</Name>
+    <Guid>48589707-a943-4d94-81a3-474707a4e0f1</Guid>
+    <ProjectGuid>6eb4aeb5-93e5-40a1-a62c-abbfa98bd980</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Adds Carol I as an alternative leader for CIVITAS Romania.</Teaser>
+    <Description>Adds Carol I as an alternative leader for CIVITAS [ICON_GOVERNMENT] Romania.</Description>
+    <Authors>ChimpanG</Authors>
+    <SpecialThanks>Belle, Alin Bul</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <AssemblyName>CIVITAS Carol I</AssemblyName>
+    <RootNamespace>CIVITAS Carol I</RootNamespace>
+    <AssociationData><![CDATA[<Associations>
+  <Dependency type="Mod" title="CIVITAS [ICON_GOVERNMENT] Romania" id="b77c610e-e9f8-4373-8e54-16db48639ae4" />
+</Associations>]]></AssociationData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateArt id="ArtDep"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateDatabase id="Carol_I_Setup_DB"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Carol_I_Config.sql</File></UpdateDatabase><UpdateIcons id="Carol_I_Setup_Icons"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Carol_I_Icons.sql</File></UpdateIcons><UpdateText id="Carol_I_Setup_Text"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Carol_I_Localisation.sql</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateArt id="ArtDep"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateDatabase id="Carol_I_DB"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Carol_I_Leader.sql</File><File>Core/Carol_I_UA.sql</File><File>Core/Carol_I_Agenda.sql</File><File>Core/Carol_I_Strategy.sql</File></UpdateDatabase><UpdateIcons id="Carol_I_Icons"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Carol_I_Icons.sql</File></UpdateIcons><UpdateText id="Carol_I_Text"><Properties><LoadOrder>110</LoadOrder></Properties><File>Core/Carol_I_Localisation.sql</File></UpdateText></InGameActions>]]></InGameActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Mod.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Core\Carol_I_Agenda.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Carol_I_Config.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Carol_I_Icons.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Carol_I_Leader.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Carol_I_Localisation.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Carol_I_ModSupport.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Carol_I_Strategy.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Carol_I_UA.sql">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

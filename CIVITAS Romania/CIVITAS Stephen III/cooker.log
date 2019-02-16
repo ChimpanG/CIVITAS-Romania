@@ -1,0 +1,11 @@
+Starting AssetCooker...
+XLP cook starting...
+\\WDMYCLOUD\Sam\Projects\Modding\Civ VI\IdeaProjects\GitHub\CIVITAS-Romania\CIVITAS Romania\CIVITAS Stephen III\XLPs\Tilebase.xlp
+Opened output file: C:\Users\Sam\Documents\My Games\Sid Meier's Civilization VI\Mods\CIVITAS Stephen III\Platforms\MacOS\BLPs/TileBase.blp    For XLP: '\\WDMYCLOUD\Sam\Projects\Modding\Civ VI\IdeaProjects\GitHub\CIVITAS-Romania\CIVITAS Romania\CIVITAS Stephen III\XLPs\Tilebase.xlp'
+Starting 'TileBase'
+Load finished for: 'TileBase' in 0.215 seconds
+Cook finished for: 'TileBase' in 0.001 seconds
+Disk write finished for: 'TileBase' in 0.013 seconds
+Cleanup finished for: 'TileBase' in 0.005 seconds
+XLP cook completed with success.
+Cook completed in 0.360 seconds
