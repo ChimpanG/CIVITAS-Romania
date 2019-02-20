@@ -38,7 +38,7 @@ VALUES
 
 	("en_US",	"LOC_UNIT_CVS_ROMANIA_UU_NAME",	"Vânători"	),
 	("en_US",	"LOC_UNIT_CVS_ROMANIA_UU_DESCRIPTION",	 
-	"A melee unit unique to Romania. Replaces Spec Ops. Receives additional [ICON_STRENGTH] Combat Strength on Hill terrain and +50% experience from combat."	),
+	"A recon unit unique to Romania. Replaces Spec Ops. Receives additional [ICON_STRENGTH] Combat Strength on Hill terrain and +50% experience from combat."	),
 
 	("en_US",	"LOC_MODIFIER_CVS_ROMANIA_UU_HILLS_COMBAT",  "+{1_Amount} Combat on Hills"	),
 

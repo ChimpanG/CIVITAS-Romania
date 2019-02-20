@@ -14,6 +14,7 @@
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
     <SupportsMultiplayer>true</SupportsMultiplayer>
     <SupportsHotSeat>true</SupportsHotSeat>
+	<ModProperties><CompatibleVersions>2.0</CompatibleVersions></ModProperties>
     <AssemblyName>CIVITAS Vlad III</AssemblyName>
     <RootNamespace>CIVITAS Vlad III</RootNamespace>
     <AssociationData><![CDATA[<Associations>

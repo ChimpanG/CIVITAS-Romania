@@ -4,9 +4,9 @@ XLP cook starting...
 \\WDMYCLOUD\Sam\Projects\Modding\Civ VI\IdeaProjects\GitHub\CIVITAS-Romania\CIVITAS Romania\CIVITAS Vlad III\XLPs\Units.xlp
 Opened output file: C:\Users\Sam\Documents\My Games\Sid Meier's Civilization VI\Mods\CIVITAS Vlad III\Platforms\MacOS\BLPs/units/units.blp    For XLP: '\\WDMYCLOUD\Sam\Projects\Modding\Civ VI\IdeaProjects\GitHub\CIVITAS-Romania\CIVITAS Romania\CIVITAS Vlad III\XLPs\Units.xlp'
 Starting 'units/units'
-Load finished for: 'units/units' in 0.188 seconds
-Cook finished for: 'units/units' in 0.001 seconds
-Disk write finished for: 'units/units' in 0.020 seconds
-Cleanup finished for: 'units/units' in 0.004 seconds
+Load finished for: 'units/units' in 0.201 seconds
+Cook finished for: 'units/units' in 0.002 seconds
+Disk write finished for: 'units/units' in 0.028 seconds
+Cleanup finished for: 'units/units' in 0.005 seconds
 XLP cook completed with success.
-Cook completed in 0.238 seconds
+Cook completed in 0.261 seconds
